@@ -6,7 +6,7 @@ def CreateLSTM():
     # create model 
     model = Sequential()
     # add model layers
-    model.add(LSTM(32,input_dim=78, return_sequences=True))  # try using a GRU instead, for fun
+    model.add(LSTM(32,input_dim=77, return_sequences=True))  # try using a GRU instead, for fun
     model.add(Dropout(0.2))
     model.add(LSTM(32, return_sequences=True))  # try using a GRU instead, for fun
     model.add(Dropout(0.2))
